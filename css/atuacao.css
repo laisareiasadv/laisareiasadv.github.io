@@ -1,0 +1,115 @@
+.atuacao {
+    background-color: var(--white);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.atuacao-content {
+    width: var(--x-margin);
+    height: 80%;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.atuacao-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+.atuacao-text h1 {
+    font-size: 35pt;
+    max-inline-size: 700px;
+    color: var(--black);
+    margin: 0;
+    padding: 0;
+}
+
+.atuacao-text p {
+    font-size: 16pt;
+    max-inline-size: 650px;
+    color: var(--black);
+    margin: 0;
+    padding: 0;
+}
+
+.atuacao-blocks {
+    width: 1200px;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.atuacao-block {
+    background-color: #ececec;
+    width: 350px;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    transition: all var(--transition-time);
+    cursor: default;
+    border-radius: 1rem;
+    box-shadow: 0 6px 162px -30px #ecececa3;
+    -webkit-box-shadow: 0 6px 162px -30px #ecececa3;
+    -moz-box-shadow: 0 6px 162px -30px #ecececa3;
+}
+
+.atuacao-block svg {
+    fill: var(--black);
+    width: 50px;
+    padding: 0 0 10px 0;
+}
+
+.atuacao-block h1 {
+    font-size: 18pt;
+    margin: 0;
+    padding: 0;
+}
+
+.atuacao-block p {
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+}
+
+@media screen and (max-width: 1000px) {
+    .atuacao-text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .atuacao-text h1 {
+        font-size: 30pt;
+        max-inline-size: 80%;
+        align-self: center;
+    }
+
+    .atuacao-text p {
+        font-size: 12pt;
+    }
+
+    .atuacao-blocks {
+        max-width: 250px;
+        grid-template-columns: 1fr;
+    }
+
+    .atuacao-block {
+        width: 250px;
+        height: 400px;
+    }
+}
